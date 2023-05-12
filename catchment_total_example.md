@@ -53,7 +53,7 @@ $ aguila lddsound_30min_rhine_meuse.ldd
 ![image](https://github.com/edwinkost/catchment_averaging/assets/2393879/45eeb251-3c0a-47c5-9241-056054981115)
 
 
-4. Calculate the catcment area for every pixel, see
+4. Calculate the catcment area for every pixel.
 
 ```
 # calculate catchment area (m2), note that the unit in cellarea30min.nc is m2
