@@ -7,8 +7,11 @@ cell_area: https://opendap.4tu.nl/thredds/fileServer/data2/pcrglobwb/version_201
 
 ldd: https://opendap.4tu.nl/thredds/fileServer/data2/pcrglobwb/version_2019_11_beta/pcrglobwb2_input/global_30min/routing/ldd_and_cell_area/lddsound_30min.nc
 
+```
+# download the files
 wget https://opendap.4tu.nl/thredds/fileServer/data2/pcrglobwb/version_2019_11_beta/pcrglobwb2_input/global_30min/routing/ldd_and_cell_area/cellarea30min.nc
 wget https://opendap.4tu.nl/thredds/fileServer/data2/pcrglobwb/version_2019_11_beta/pcrglobwb2_input/global_30min/routing/ldd_and_cell_area/lddsound_30min.nc
+```
 
 3. Crop the ldd and cell_area files to the bounding box of your study area
 
