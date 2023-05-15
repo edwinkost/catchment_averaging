@@ -42,3 +42,6 @@ pcrcalc catchmant_area.map = "catchmenttotal(cellarea30min_rhine_meuse.map, ldds
 
 # - visualize it
 aguila catchmant_area.map
+
+# - visualize catchment area together with ldd
+aguila catchmant_area.map + lddsound_30min_rhine_meuse.ldd
