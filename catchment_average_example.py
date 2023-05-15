@@ -31,7 +31,7 @@ input_file     = "/scratch/depfg/sutan101/catchment_average_example/GHRM5C_1978-
 
 # crop input file to our bounding box extent
 # - gdalwarp -te xmin ymin xmax ymax -tr cellsize cellsize input output_file.tif
-cmd = "gdalwarp -te 3.5 46. 12. 52.5 -tr 0.5 0.5 " + input_file + " " + input_file + ".tif"
+cmd = "gdalwarp -te 3.5 46. 12. 52.5 -tr 0.5 0.5 -r average " + input_file + " " + input_file + ".tif"
 print(cmd)
 os.system(cmd)
 # - convert to pcraster
