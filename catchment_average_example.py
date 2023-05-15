@@ -3,6 +3,7 @@
 
 import os
 import pcraster as pcr
+import numpy as np
 
 # set your working directory and go there
 work_dir = "/scratch/depfg/sutan101/catchment_average_example/"
@@ -50,3 +51,8 @@ cell_value = pcr.readmap(file_to_be_read)
 # calculate upstream/catchment average values
 upstream_average_value = pcr.catchmenttotal(cell_value * cell_area, ldd) / catchment_area
 pcr.report(upstream_average_value, "upstream_average_value.map")
+
+# convert the map value to a numpy array
+mv = 1e20
+upstream_average_value_np = pcr.pcr2numpy(upstream_average_value, mv)
+print(upstream_average_value_np)
